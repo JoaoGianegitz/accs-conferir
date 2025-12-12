@@ -162,15 +162,21 @@
     margin: auto;
     flex-grow: 1;
     display: flex;
-    flex-direction: column;   /* ❗ antes faltava ISSO */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 36px;
     font-weight: bold;
-    padding: 0 20px;
-    gap: 5px;
-    font-family: "Julius Sans One", sans-serif;
+}
+@media (max-width: 830px) {
+    .btn-abrir-menu {
+        display: block;
+    }
+
+    .barra-topo nav {
+        display: none;
+    }
 }
 .conteudo-principal h1 {
     font-family: "Julius Sans One", sans-serif;
@@ -1615,3 +1621,4 @@ img {
         font-size: 15px;
     }
 }
+
